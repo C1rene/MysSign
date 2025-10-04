@@ -279,11 +279,11 @@ export default class MysSign extends base {
             this.signMsg = '验证码失败'
             sign.message = '验证码失败'
 
+            let res; let retry = 0
             if (api.type == 1) {
-                let res = await this.mysApi.getData('signrecognize', sign.data, 'all')
+                res = await this.mysApi.getData('signrecognize', sign.data, 'all')
                 if (res?.resultid) {
                     let results = res
-                    let retry = 0
                     await common.sleep(5000)
                     res = await this.mysApi.getData('results', results, 'all')
                     while ((res?.status == 2) && retry < 10) {
@@ -293,10 +293,9 @@ export default class MysSign extends base {
                     }
                 }
             } else if (api.type == 2) {
-                let res = await this.mysApi.getData('in', sign.data, 'all')
+                res = await this.mysApi.getData('in', sign.data, 'all')
                 if (res?.request) {
                     let request = res
-                    let retry = 0
                     await common.sleep(5000)
                     res = await this.mysApi.getData('res', request, 'all')
                     while ((res?.request == 'CAPCHA_NOT_READY') && retry < 10) {
