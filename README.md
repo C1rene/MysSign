@@ -6,7 +6,7 @@
 ## 说明
 1、有问题请百度，爱用不用。
 ```
-git clone https://github.com/kissnavel/bujidaoRUN.git ./plugins/bujidao/
+git clone --depth=1 https://github.com/C1rene/MysSign.git ./plugins/bujidao/
 ```
 2、原仓库：<a href="https://github.com/babanbang/bujidaoRUN">bujidaoRUN</a>，本仓库修改并修复了部分功能。
 
