@@ -1,17 +1,11 @@
-## 停更说明
-1、本仓库主要使用的体力、签到、米游社面板功能等已整合至：“<a href="https://github.com/kissnavel/genshin">genshin</a>”仓库，推荐使用此仓库。
+# 云崽系机器人的米游社签到插件
 
-2、本仓库将暂停更新，修复致命错误除外。
+## 简介
+自用改版
 
-## 说明
-1、有问题请百度，爱用不用。
+## 安装方式
+
+**GitHub 源**
 ```
 git clone --depth=1 https://github.com/C1rene/MysSign.git ./plugins/bujidao/
 ```
-2、原仓库：<a href="https://github.com/babanbang/bujidaoRUN">bujidaoRUN</a>，本仓库修改并修复了部分功能。
-
-3、已添加国际服支持，建议仅保留签到功能，其他功能可按需保留，不需要保留的可用锅巴插件屏蔽。
-
-4、原神、星铁米游社面板代码来源：<a href="https://github.com/thisee/xiaokeli">xiaokeli</a>，已修改适配本仓库。
-
-5、绑定设备、未定签到等需配合<a href="https://github.com/kissnavel/genshin">genshin</a>使用。
